@@ -1,0 +1,102 @@
+body{
+    background-color: #f6f6f6;
+}
+.main_member{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.back_color{
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: Roboto,sans-serif;
+}
+.main_member .title{
+    font-size: 25px;
+    color: #001f60;
+    font-weight: bold;
+}
+.add_member_btn{
+    background-color: #001f60;
+    color: #fff;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    width: 170px;
+    border-radius: 7px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    outline: none;
+    border: 0px;
+}
+.welcome_svg{
+    text-align: center;
+}
+.welcome_svg label{
+    font-size: 14px;
+}
+.welcome_svg h1{
+    font-size: 22px;
+    color: #001f60;
+    font-weight: 700;
+}
+.note{
+    background-color: #95e5d8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 1px solid black;
+}
+.note_title{
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.note_title span{
+    background: #f5f5f5;
+}
+.info_icon{
+    font-size: 12px;
+    font-weight: bold;
+    background: #f5f5f5;
+}
+.note ul{
+    list-style: none;
+    
+}
+.note ul li{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.note ul li ol{
+    margin-left: 15px;
+}
+
+
+
+@media (min-width: 1200px) {
+    .w-xl-75 {
+        width:75%;
+    }
+}
+@media (min-width: 992px) {
+    .w-lg-75 {
+        width:75%;
+    }
+}
+@media (min-width: 768px) {
+    .w-md-75 {
+        width:75%;
+    }
+}
+@media (min-width: 576) {
+    .w-sm-100 {
+        width:100%;
+    }
+}
+@media only screen and (max-width: 363px) {
+    .welcome_svg img{
+        width: 250px;
+    }
+}

@@ -1,0 +1,70 @@
+.schedule .schedule {
+    background-color: #fff;
+}
+.schedule .schedule div.login-style-1 {
+    margin: 15px 0px 0px 0px;
+    color: #001f60;
+    font-weight: 600;
+}
+.schedule .schedule div.login-style-2 {
+    margin: 15px 0px;
+    color: #2e2e2e;
+    font-weight: 400;
+}
+.schedule .schedule input[type='text'] {
+    background: transparent;
+    color: #002060;
+    caret-color: #002060;
+    border: 0px;
+    padding: 5px 0px;
+    margin-top: 5px;
+    border-bottom: 0.5px solid #002060;
+    font-size: 12px;
+    outline: none;
+}
+.schedule .schedule input[type='submit'] {
+    background: #002060;
+    border: 0px;
+    padding: 9px 0px;
+}
+.schedule .login-validation-1 {
+    color: #ff0000;
+}
+.schedule .dashline-left-right::before {
+    content: "";
+    width: 20%;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+}
+.schedule .dashline-left-right {
+    color: #1b1a1a;
+    font-size: 10px;
+    font-weight: 600;
+    position: relative;
+}
+.schedule .dashline-left-right::after {
+    content: "";
+    width: 20%;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+}
+.schedule .other-login a {
+    text-decoration: none;
+}
+.schedule .other-login img.square {
+    width: 30px;
+    height: 30px;
+}
+.schedule .other-login img.rectangle {
+    width: 40px;
+    height: 45px;
+}
+.schedule .other-login-name {
+    color: #002060;
+}

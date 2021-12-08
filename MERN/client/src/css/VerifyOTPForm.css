@@ -1,0 +1,54 @@
+div.otp {
+    background: #fff;
+    margin-top: 60px;
+}
+.otp .rounded-outer-circle {
+    width: 100px;
+    margin-top: -40px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.19);
+}
+.otp img {
+    width: 80px;
+    height: 80px;
+}
+.otp div.otp-style-1 {
+    margin: 15px 0px 0px 0px;
+    color: #001f60;
+    font-weight: 600;
+}
+.otp div.otp-style-2 {
+    margin: 15px 0px;
+    color: #2e2e2e;
+    font-weight: 400;
+}
+.otp div.otp-style-3 {
+    margin: 15px 0px;
+    color: #9f9f9f;
+    font-weight: 400;
+}
+.otp input[type='text'] {
+    background: transparent;
+    color: #002060;
+    caret-color: #002060;
+    border: 0px;
+    padding: 5px 0px;
+    margin-top: 5px;
+    border-bottom: 0.5px solid #002060;
+    font-size: 12px;
+    outline: none;
+}
+.otp-validation-1 {
+    color: #ff0000;
+}
+.otp .otp-resend a {
+    color: #002060;
+    text-decoration: none;
+}
+.otp .otp-resend a:hover {
+    color: #998fa2;
+}
+.otp input[type='submit'] {
+    background: #002060;
+    border: 0px;
+    padding: 9px 0px;
+}

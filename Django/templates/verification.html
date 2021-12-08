@@ -1,0 +1,97 @@
+{% extends 'navbar.html' %}
+
+{% block title %}
+    Verification | Co-WIN Vaccinator
+{% endblock title %}
+
+{% block css %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/select2/select2.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/Header.css' %}">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/form.css' %}">
+{% endblock css %}
+
+{% block VerificationActive %}
+active
+{% endblock VerificationActive %}
+
+{% block VerificationCurrent %}
+<span class="sr-only">(current)</span>
+{% endblock VerificationCurrent %}
+
+{% block content %}
+    {% for message in messages %}
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-{{ message.tags }}">
+                        <div class="container">
+                            <div class="d-flex align-items-center">
+                                <span class="alert-icon d-flex w-75">
+                                    <em class="bi bi-info-square-fill alert-error-icon"></em>
+                                    <p class="mb-0 ml-2 alert-message"><strong>Message: </strong>{{ message }}</p>
+                                </span>
+                                <span class="ml-auto text-right w-25">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">
+                                            <em class="bi bi-x alert-close-icon"></em>
+                                        </span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    <div class="content">
+        <div class="container sign-in-content">
+            <div class="row">
+                <div class="col-md-6 order-md-2 my-md-auto">
+                    <img src="{% static '/img/Medical-research-rafiki.svg' %}" alt="Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 contents">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 shadow rounded p-4">
+                            <div class="mb-4">
+                                <h4 class="text-center">Enter Details of Vaccine Taker</h4>
+                                <p class="mb-4 px-3 text-center">World largest vaccination drive against Covid-19.</p>
+                            </div>
+                            <form id="verification" action="http://localhost:8080/PHP_MySQL/verification.php" method="POST">
+                                {% csrf_token %}
+                                <div class="form-group first">
+                                    <label for="username">ID Number</label>
+                                    <input type="text" class="form-control" id="id_number" name="id-number" required>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="password">Secret Code</label>
+                                    <input type="password" class="form-control" id="secret_code" name="secret-code" required>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <div class="rs-select2 js-select-simple select--no-search w-100 pt-2">
+                                        <select id="dose_no" name="dose-no" class="w-100" required>
+                                            <option value="" disabled selected>Select Dose</option>
+                                            <option value="1">Dose 1</option>
+                                            <option value="2">Dose 2</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                                <input type="submit" value="Let's Verify" class="btn text-white btn-block btn-primary">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block js %}
+    <script src={% static '/select2/select2.min.js' %}></script>
+    <script src={% static '/js/signin.js' %}></script>
+    <script src={% static '/js/profile.js' %}></script>
+    {% comment %} <script src={% static '/js/verify.js' %}></script> {% endcomment %}
+{% endblock js %}

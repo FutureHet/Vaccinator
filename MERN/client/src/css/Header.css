@@ -1,0 +1,36 @@
+.header {
+    background: #fff;
+}
+.main_header{
+    box-shadow: #ccc 1px 2px 1px 0px;
+    display: flex;
+    align-items: center;
+}
+.main_header img{
+    height: 35px;
+}
+.functional_header{
+    background-color: #001f60;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.functional_header img{
+    height: 25px;
+}
+.functional_header div{
+    font-size: 10px;
+}
+.functional_header button{
+    font-size: 10px;
+}
+/* .functional_header button{
+    background: #011237;
+    color: #fff;
+    border: 1px solid #000;
+}
+.functional_header button:hover{
+    background: #011237;
+    color: #fff;
+    border: 1px solid #000;
+} */

@@ -1,0 +1,80 @@
+div.login {
+    background: #fff;
+    margin-top: 60px;
+}
+.login .rounded-outer-circle {
+    width: 100px;
+    margin-top: -40px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.19);
+}
+.login img {
+    width: 80px;
+    height: 80px;
+}
+.login div.login-style-1 {
+    margin: 15px 0px 0px 0px;
+    color: #001f60;
+    font-weight: 600;
+}
+.login div.login-style-2 {
+    margin: 15px 0px;
+    color: #2e2e2e;
+    font-weight: 400;
+}
+.login input[type='text'] {
+    background: transparent;
+    color: #002060;
+    caret-color: #002060;
+    border: 0px;
+    padding: 5px 0px;
+    margin-top: 5px;
+    border-bottom: 0.5px solid #002060;
+    font-size: 12px;
+    outline: none;
+}
+.login input[type='submit'] {
+    background: #002060;
+    border: 0px;
+    padding: 9px 0px;
+}
+.login-validation-1 {
+    color: #ff0000;
+}
+.login .dashline-left-right::before {
+    content: "";
+    width: 20%;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+}
+.dashline-left-right {
+    color: #1b1a1a;
+    font-size: 10px;
+    font-weight: 600;
+    position: relative;
+}
+.login .dashline-left-right::after {
+    content: "";
+    width: 20%;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+}
+.other-login a {
+    text-decoration: none;
+}
+.other-login img.square {
+    width: 30px;
+    height: 30px;
+}
+.other-login img.rectangle {
+    width: 40px;
+    height: 45px;
+}
+.other-login-name {
+    color: #002060;
+}
